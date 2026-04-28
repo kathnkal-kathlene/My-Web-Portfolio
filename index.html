@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+</head> 
+<body> 
+    <!-- Header--> 
+    <header class="slide-in-left"> 
+        <img src="pic1.jpg" alt="Profile Image" class="profile-img float">
+        <div class="header-text">
+            <h1> Kathlene Manayon </h1> 
+            <p> Aspiring Web Developer</p>
+        </div>
+    </header>
+    
+    <!-- Navigation -->
+    <nav> 
+        <button class="hamburger" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <a href="#about">About</a> 
+        <a href="#skills">Skills</a> 
+        <a href="#projects">Projects</a> 
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <!-- About --> 
+    <section id="about" class="fade-in-up" style="animation-delay: 0.5s;"> 
+        <h2>About Me</h2 > 
+        <p> I’m an IT student with a growing passion for web development and creating things that people can actually use and enjoy. I may still be figuring things out, but I’m someone who learns by doing — whether it’s building small projects, exploring new ideas, or improving my skills step by step. I enjoy turning simple concepts into working websites and finding creative ways to solve problems. Outside of coding, I value meaningful connections, personal growth, and making the most out of everyday experiences. I believe that progress doesn’t have to be perfect — it just has to be consistent.
+        </p> 
+    </section>
+    
+    <!-- Skills -->
+    <section id="skills" class="fade-in-up" style="animation-delay: 1s;"> 
+        <h2>Skills</h2> 
+        <ul> 
+            <li>HTML</li> 
+            <li>CSS</li> 
+            <li>Web Design</li> 
+        </ul> 
+    </section>
+    
+    <!-- Project --> 
+    <section id="projects">
+        <h2>Projects</h2> 
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Activity 1</h3> 
+                <p>This project is a responsive website built using HTML, CSS, and JavaScript, showcasing my skills in layout design, styling, and basic interactivity. It highlights my ability to create clean, functional, and user-friendly web interfaces.</p>
+                <a href="activity 1.html" class="visit-btn">Visit</a>
+            </div>
+            <div class="project-card">
+                <h3>Mini Website</h3> 
+                <p>A modern collaborative portfolio website showcasing creative web design and front-end development skills. Built with clean layouts and responsive elements, it highlights teamwork and aesthetic UI.</p>
+                <a href="home.html" class="visit-btn">Visit</a>
+            </div>
+            <div class="project-card">
+                <h3>Class Schedule and Students Grades</h3> 
+                <p>A personal portfolio project that presents web development works with a simple yet polished design. Focused on user-friendly navigation and responsiveness across different devices.</p>
+                <a href="class schedule.html" class="visit-btn">Visit</a>
+            </div>
+            <div class="project-card">
+                <h3>Poster Making</h3> 
+                <p>An interactive web poster project that combines HTML and CSS to create a visually appealing digital design. Emphasizes creativity, typography, and layout for storytelling through code.</p>
+                <a href="poster making.html" class="visit-btn">Visit</a>
+        </div>
+    </section> 
+    
+    <!-- Contact --> 
+    <section id="contact"> 
+        <h2>Contact Me:</h2> 
+        <form> 
+            <input type="text" placeholder="Your name" required> 
+            <input type="email" placeholder="Your email" required> 
+            <textarea rows="5" placeholder="Enter a Message"></textarea>
+            <input type="submit" value="Send Message">
+            </form> 
+    </section>
+    
+    <footer> 
+        <p> My Portfolio</p> 
+    </footer>
+    
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav');
+        
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+    
+    </body>
+    </html>
